@@ -7,7 +7,7 @@
   # Content Security Policy (CSP):
   # Permite únicamente recursos locales y fuentes autorizadas de Google Fonts.
   # Bloquea inyecciones de scripts no autorizados y uso de plugins vulnerables.
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://lh3.googleusercontent.com data:; connect-src 'self' https://formspree.io; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formspree.io;
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://lh3.googleusercontent.com data:; connect-src 'self' https://formsubmit.co https://formspree.io; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co https://formspree.io;
 
   # Prevención de Clickjacking
   X-Frame-Options: DENY

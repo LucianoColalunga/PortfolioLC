@@ -91,30 +91,41 @@ export function initContactForm() {
       timestamp: new Date().toISOString()
     };
 
-    // 7. Envío a Netlify Forms (compatible con Netlify Forms & AJAX)
+    // 7. Envío directo al email colalunga.97@gmail.com
     try {
       if (submitButton) {
         submitButton.disabled = true;
         submitButton.textContent = 'Enviando mensaje...';
       }
 
-      const formData = new FormData(form);
-      formData.set('form-name', 'contacto');
-      formData.set('nombre', sanitizedPayload.nombre);
-      formData.set('email', sanitizedPayload.email);
-      formData.set('asunto', sanitizedPayload.asunto);
-      formData.set('mensaje', sanitizedPayload.mensaje);
-
-      const urlEncodedBody = new URLSearchParams(formData).toString();
-
-      const response = await fetch('/', {
+      // Envío principal via FormSubmit directo a Gmail
+      const response = await fetch('https://formsubmit.co/ajax/colalunga.97@gmail.com', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: urlEncodedBody
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: sanitizedPayload.nombre,
+          email: sanitizedPayload.email,
+          _subject: `[Portfolio] ${sanitizedPayload.asunto} - ${sanitizedPayload.nombre}`,
+          message: sanitizedPayload.mensaje,
+          _template: 'table',
+          _captcha: 'false'
+        })
       });
 
-      if (!response.ok) {
-        throw new Error(`Error al enviar formulario a Netlify: ${response.status}`);
+      const result = await response.json().catch(() => null);
+
+      if (!response.ok || (result && result.success === 'false')) {
+        // Fallback a Netlify Forms si hubiese inconveniente con la API
+        const formData = new FormData(form);
+        formData.set('form-name', 'contacto');
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        });
       }
 
       rateLimiter.recordSubmission();
