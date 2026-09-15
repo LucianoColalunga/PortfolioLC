@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Security Headers Configuration (Netlify / Cloudflare Pages / Static Hosts)
+   Protección estricta contra XSS, Clickjacking, MIME-Sniffing y Tabnabbing
+   ========================================================================== */
+
+/*
+  # Content Security Policy (CSP):
+  # Permite únicamente recursos locales y fuentes autorizadas de Google Fonts.
+  # Bloquea inyecciones de scripts no autorizados y uso de plugins vulnerables.
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://lh3.googleusercontent.com data:; connect-src 'self' https://formspree.io; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formspree.io;
+
+  # Prevención de Clickjacking
+  X-Frame-Options: DENY
+
+  # Prevención de MIME Sniffing
+  X-Content-Type-Options: nosniff
+
+  # Política de Referrer para privacidad
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Restricción de permisos y APIs del dispositivo no requeridas
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+
+  # Forzar HTTPS (HSTS)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Protección XSS legacy para navegadores antiguos
+  X-XSS-Protection: 1; mode=block

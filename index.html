@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Security Headers via Meta Tags -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://lh3.googleusercontent.com data:; connect-src 'self' https://formspree.io; object-src 'none'; frame-ancestors 'none'; base-uri 'self';" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- SEO & Social Meta Tags -->
+  <title>Luciano Colalunga | Desarrollador Full Stack, QA &amp; Arquitecto de Software</title>
+  <meta name="description" content="Portfolio profesional de Luciano Colalunga. Desarrollador Full Stack (React, Next.js, Spring Boot), Especialista en QA Manual &amp; Automation (UTN), Arquitecto de Software y Ciberseguridad." />
+  <meta name="author" content="Luciano Colalunga" />
+  <meta name="theme-color" content="#0b1326" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Luciano Colalunga | Desarrollador Full Stack, QA &amp; Arquitecto de Software" />
+  <meta property="og:description" content="Especializado en el desarrollo de soluciones digitales orientadas a optimizar procesos y resolver necesidades reales de negocio." />
+  <meta property="og:image" content="./assets/luciano-perfil.jpg" />
+
+  <!-- Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+
+  <!-- Custom Modular Stylesheet -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- =========================================================================
+       1. HEADER / NAVEGACIÓN
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="#" class="brand-link" aria-label="Ir al inicio - Luciano Colalunga">
+        <img 
+          src="https://lh3.googleusercontent.com/aida/AEtjO1UxAWpjcdg-SHEg3e0OYghhu-7Vpr_Cj-GDR_hyTPHHVNY7Ry4N5QXsP8up_gC6vJzZPKwQ3SDCj-Jh3mUuCkFXlbCfwHWEOIGaAtuES8RY60a-NGXCKNFCPwis11OEEcfXpCncz5S2xy6SPAj0SbFk7MlI47XntdzHg9Pd7l0c9Pai-coWAJTpg47S7nBAn6Zuc0q1R9i9uHzRqPL91O5zN4YHVYlcq_iqFepuQLJmiRSQE7EpZdB-" 
+          alt="Logo Luciano Colalunga" 
+          class="brand-avatar"
+          width="32" 
+          height="32" 
+        />
+        <span class="brand-title">Luciano Colalunga</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#" class="nav-link active" data-path="inicio">Inicio</a>
+        <a href="#sobre-mi" class="nav-link" data-path="sobre-mi">Sobre Mí</a>
+        <a href="#proyectos" class="nav-link" data-path="proyectos">Proyectos</a>
+        <a href="#tecnologias" class="nav-link" data-path="tecnologias">Tecnologías</a>
+        <a href="#certificados" class="nav-link" data-path="certificados">Certificados</a>
+        <a href="#contacto" class="nav-link" data-path="contacto">Contacto</a>
+      </nav>
+
+      <!-- Action Area -->
+      <div class="header-actions">
+        <a href="#cv-banner" class="btn btn-primary btn-sm">
+          <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
+          <span>Descargar CV</span>
+        </a>
+        <div class="header-profile-badge" title="Luciano Colalunga">
+          <img 
+            src="./assets/luciano-perfil.jpg" 
+            alt="Foto de perfil de Luciano Colalunga" 
+            width="36" 
+            height="36" 
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. MAIN CONTENT
+       ========================================================================= -->
+  <main id="main-content">
+    <div class="hero-wrapper">
+      <!-- Ambient Lighting Orbs -->
+      <div class="ambient-glow-top" aria-hidden="true"></div>
+      <div class="ambient-glow-left" aria-hidden="true"></div>
+      <div class="ambient-glow-right" aria-hidden="true"></div>
+
+      <!-- HERO SECTION -->
+      <section class="container" style="padding-top: 1rem; padding-bottom: 2rem;">
+        <div class="hero-content">
+          <!-- Status Badge -->
+          <div class="status-badge">
+            <span class="pulse-dot-container">
+              <span class="pulse-dot-ping"></span>
+              <span class="pulse-dot-core"></span>
+            </span>
+            <span class="code-badge" style="color: var(--color-tertiary);">DISPONIBLE PARA PROYECTOS • FULL STACK &amp; QA</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="hero-title">
+            Luciano Colalunga — <span class="gradient-text">Desarrollador Full Stack, QA &amp; Arquitecto de Software</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-description">
+            Especializado en el desarrollo de soluciones digitales orientadas a optimizar procesos y resolver necesidades reales de negocio.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="#cv-banner" class="btn btn-primary">
+              <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
+              <span>Descargar CV (PDF)</span>
+            </a>
+            <a href="https://github.com/LucianoColalunga" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
+              <span>Ver GitHub</span>
+            </a>
+            <a href="https://wa.me/5492920344637" class="btn btn-emerald" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined" style="font-size: 18px;">chat</span>
+              <span>Contactar vía WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Metric Strip -->
+          <div class="metrics-grid-container">
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value-wrapper">
+                  <span class="metric-number" style="color: var(--color-primary);">Desde 2023</span>
+                </div>
+                <span class="metric-label">Programando activamente</span>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-value-wrapper">
+                  <span class="metric-number" style="color: var(--color-secondary);">290+</span>
+                  <span style="font-size: 0.75rem; color: var(--color-on-surface-variant); font-weight: 500;">hrs</span>
+                </div>
+                <span class="metric-label">Prácticas laborales intensivas</span>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-value-wrapper">
+                  <span class="metric-number" style="color: var(--color-tertiary);">2x</span>
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: #fbbf24; font-variation-settings: 'FILL' 1;">emoji_events</span>
+                </div>
+                <span class="metric-label">Proyectos ganadores &amp; Hackathon</span>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-value-wrapper">
+                  <span class="metric-number" style="color: #34d399;">100%</span>
+                </div>
+                <span class="metric-label">QA Manual &amp; Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           3. SOBRE MÍ & COMPETENCIAS CLAVE (5 FACETAS)
+           ======================================================================= -->
+      <section id="sobre-mi" class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="code-badge" style="color: var(--color-primary);">Perfil &amp; Especialidades</span>
+          </div>
+          <h2 class="section-title">Sobre Mí &amp; Competencias Clave</h2>
+          <p class="section-subtitle">
+            Un enfoque transversal que combina desarrollo robusto, arquitectura escalable, calidad de software rigurosa y seguridad informática.
+          </p>
+        </div>
+
+        <div class="facets-grid">
+          <!-- Facet 1: Full Stack -->
+          <article class="facet-card">
+            <div>
+              <div class="facet-icon-box" style="background-color: rgba(192, 193, 255, 0.1); color: var(--color-primary);">
+                <span class="material-symbols-outlined" style="font-size: 28px;">terminal</span>
+              </div>
+              <h3 class="facet-heading">Desarrollador Full Stack</h3>
+              <p class="facet-text">
+                Construcción integral de aplicaciones modernas de principio a fin utilizando React, Next.js, Node.js y ecosistema Java con Spring Boot. Código modular, tipado y performante.
+              </p>
+            </div>
+            <div class="facet-footer code-badge" style="color: var(--color-primary);">
+              React · Next.js · Node.js · Spring Boot
+            </div>
+          </article>
+
+          <!-- Facet 2: Arquitecto de Software -->
+          <article class="facet-card">
+            <div>
+              <div class="facet-icon-box" style="background-color: rgba(221, 183, 255, 0.1); color: var(--color-secondary);">
+                <span class="material-symbols-outlined" style="font-size: 28px;">architecture</span>
+              </div>
+              <h3 class="facet-heading">Arquitecto de Software</h3>
+              <p class="facet-text">
+                Diseño de arquitecturas de software sostenibles, separación en capas, microservicios, optimización de esquemas relacionales con PostgreSQL y patrones orientados a negocio.
+              </p>
+            </div>
+            <div class="facet-footer code-badge" style="color: var(--color-secondary);">
+              Clean Architecture · Microservicios · PostgreSQL
+            </div>
+          </article>
+
+          <!-- Facet 3: QA Manual & Automation -->
+          <article class="facet-card">
+            <div>
+              <div class="facet-icon-box" style="background-color: rgba(76, 215, 246, 0.1); color: var(--color-tertiary);">
+                <span class="material-symbols-outlined" style="font-size: 28px;">fact_check</span>
+              </div>
+              <h3 class="facet-heading">QA Manual &amp; Automation</h3>
+              <p class="facet-text">
+                Garantía de calidad sistemática. Planes de prueba manuales, reportes de bugs detallados y suites de pruebas automatizadas E2E y de integración utilizando Cypress avaladas por la UTN.
+              </p>
+            </div>
+            <div class="facet-footer code-badge" style="color: var(--color-tertiary);">
+              Cypress · Testing E2E · Formación UTN
+            </div>
+          </article>
+
+          <!-- Facet 4: Diseño UI/UX con Figma -->
+          <article class="facet-card">
+            <div>
+              <div class="facet-icon-box" style="background-color: rgba(244, 114, 182, 0.1); color: #f472b6;">
+                <span class="material-symbols-outlined" style="font-size: 28px;">palette</span>
+              </div>
+              <h3 class="facet-heading">Diseño UI/UX con Figma</h3>
+              <p class="facet-text">
+                Prototipado interactivo, sistemas de diseño coherentes y wireframes enfocados en la experiencia del usuario y accesibilidad, listos para una implementación técnica fluida.
+              </p>
+            </div>
+            <div class="facet-footer code-badge" style="color: #f472b6;">
+              Figma · Wireframing · Design Systems
+            </div>
+          </article>
+
+          <!-- Facet 5: Ciberseguridad & Ciberdefensa (Col span 2) -->
+          <article class="facet-card span-2">
+            <div>
+              <div class="facet-icon-box" style="background-color: rgba(52, 211, 153, 0.1); color: #34d399;">
+                <span class="material-symbols-outlined" style="font-size: 28px;">shield</span>
+              </div>
+              <h3 class="facet-heading">Ciberseguridad &amp; Ciberdefensa</h3>
+              <p class="facet-text">
+                Formación especializada en hacking ético, protección contra vulnerabilidades comunes (OWASP Top 10), aseguramiento de APIs mediante Spring Security y análisis de sistemas de ciberdefensa asistidos por Inteligencia Artificial.
+              </p>
+            </div>
+            <div class="facet-footer code-badge" style="color: #34d399;">
+              Hacking Ético · Spring Security · Ciberdefensa IA
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           4. STACK TECNOLÓGICO Y FILTROS INTERACTIVOS
+           ======================================================================= -->
+      <section id="tecnologias" class="tech-section">
+        <div class="container" style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+          <div style="display: flex; flex-direction: column;">
+            <div class="section-tag">
+              <span class="code-badge" style="color: var(--color-primary);">Stack Tecnológico</span>
+            </div>
+            <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 0;">Herramientas y Tecnologías Dominadas</h2>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="tech-filter-pills" role="toolbar" aria-label="Filtro de tecnologías">
+            <button class="tech-filter-btn active" data-cat="all" aria-pressed="true">Todos</button>
+            <button class="tech-filter-btn" data-cat="frontend" aria-pressed="false">Frontend &amp; UI/UX</button>
+            <button class="tech-filter-btn" data-cat="backend" aria-pressed="false">Backend &amp; Java</button>
+            <button class="tech-filter-btn" data-cat="db" aria-pressed="false">Bases de Datos &amp; Git</button>
+            <button class="tech-filter-btn" data-cat="qa" aria-pressed="false">Testing &amp; QA</button>
+            <button class="tech-filter-btn" data-cat="sec" aria-pressed="false">Seguridad &amp; IA</button>
+          </div>
+        </div>
+
+        <!-- Scrolling Track -->
+        <div class="tech-scroll-track">
+          <div class="scroll-gradient-left" aria-hidden="true"></div>
+          <div class="scroll-gradient-right" aria-hidden="true"></div>
+
+          <div class="tech-card-container no-scrollbar" id="tech-card-container">
+            <!-- FRONTEND -->
+            <div class="tech-card" data-cat="frontend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #f472b6;">design_services</span>
+              <div>
+                <div class="tech-card-title">Figma</div>
+                <div class="tech-card-desc">UI/UX &amp; Prototipado</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="frontend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #fb923c;">html</span>
+              <div>
+                <div class="tech-card-title">HTML5 &amp; CSS3</div>
+                <div class="tech-card-desc">Semántica &amp; Estilos</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="frontend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #2dd4bf;">palette</span>
+              <div>
+                <div class="tech-card-title">Tailwind CSS</div>
+                <div class="tech-card-desc">Utility-first Design</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="frontend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #c084fc;">grid_view</span>
+              <div>
+                <div class="tech-card-title">Bootstrap</div>
+                <div class="tech-card-desc">Responsive Layouts</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="frontend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #fde047;">code</span>
+              <div>
+                <div class="tech-card-title">JavaScript &amp; TypeScript</div>
+                <div class="tech-card-desc">ES6+ &amp; Strict Typing</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="frontend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #22d3ee;">deployed_code</span>
+              <div>
+                <div class="tech-card-title">React &amp; Next.js</div>
+                <div class="tech-card-desc">SPA &amp; SSR Moderno</div>
+              </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="tech-card" data-cat="backend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #f87171;">coffee</span>
+              <div>
+                <div class="tech-card-title">Java</div>
+                <div class="tech-card-desc">POO Robusta &amp; Tipado</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="backend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #34d399;">eco</span>
+              <div>
+                <div class="tech-card-title">Spring Framework &amp; Boot</div>
+                <div class="tech-card-desc">REST APIs &amp; Microservicios</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="backend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #818cf8;">lock</span>
+              <div>
+                <div class="tech-card-title">Spring Security</div>
+                <div class="tech-card-desc">Auth JWT &amp; Role Access</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="backend">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #4ade80;">terminal</span>
+              <div>
+                <div class="tech-card-title">Node.js</div>
+                <div class="tech-card-desc">Event-driven Server</div>
+              </div>
+            </div>
+
+            <!-- DATABASES & DEVOPS -->
+            <div class="tech-card" data-cat="db">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #38bdf8;">database</span>
+              <div>
+                <div class="tech-card-title">PostgreSQL</div>
+                <div class="tech-card-desc">RDBMS · Modelado SQL</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="db">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #f59e0b;">account_tree</span>
+              <div>
+                <div class="tech-card-title">Git &amp; GitHub</div>
+                <div class="tech-card-desc">Control de Versiones &amp; CI</div>
+              </div>
+            </div>
+
+            <!-- QA & TESTING -->
+            <div class="tech-card" data-cat="qa">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #5eead4;">task_alt</span>
+              <div>
+                <div class="tech-card-title">Cypress</div>
+                <div class="tech-card-desc">E2E Automation Testing</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="qa">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: var(--color-tertiary);">checklist</span>
+              <div>
+                <div class="tech-card-title">QA Manual &amp; Automation</div>
+                <div class="tech-card-desc">Casos de Prueba &amp; Regresión</div>
+              </div>
+            </div>
+
+            <!-- SECURITY & AI -->
+            <div class="tech-card" data-cat="sec">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #fb7185;">security</span>
+              <div>
+                <div class="tech-card-title">Ciberseguridad &amp; Hacking Ético</div>
+                <div class="tech-card-desc">Big School · Análisis OWASP</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="sec">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #c084fc;">smart_toy</span>
+              <div>
+                <div class="tech-card-title">Ciberdefensa con IA</div>
+                <div class="tech-card-desc">Congreso CACIC</div>
+              </div>
+            </div>
+
+            <div class="tech-card" data-cat="sec">
+              <span class="material-symbols-outlined" style="font-size: 22px; color: #facc15;">analytics</span>
+              <div>
+                <div class="tech-card-title">Power BI + IA</div>
+                <div class="tech-card-desc">Business Intelligence &amp; Data</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           5. PROYECTOS Y PRÁCTICAS DESTACADAS
+           ======================================================================= -->
+      <section id="proyectos" class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div style="display: flex; flex-direction: column; md:flex-direction: row; justify-content: space-between; margin-bottom: 2rem; gap: 1rem;">
+          <div>
+            <div class="section-tag">
+              <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-primary);">terminal</span>
+              <span class="code-badge" style="color: var(--color-primary);">Experiencia Práctica &amp; Proyectos</span>
+            </div>
+            <h2 class="section-title">Proyectos y Prácticas Destacadas</h2>
+            <p class="section-subtitle">
+              Desarrollos en equipo, prácticas laborales intensivas y proyectos con distinciones especiales.
+            </p>
+          </div>
+          <div>
+            <a href="https://github.com/LucianoColalunga" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined" style="font-size: 16px;">code</span>
+              <span>Ver perfil en GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: AlkyWallet -->
+          <article class="project-card">
+            <div>
+              <div class="project-header">
+                <div class="project-title-group">
+                  <span class="material-symbols-outlined" style="font-size: 22px; color: var(--color-primary);">account_balance_wallet</span>
+                  <h3 class="project-title">AlkyWallet — Billetera Virtual Fullstack</h3>
+                </div>
+                <span class="project-badge-pill" style="background-color: rgba(192, 193, 255, 0.2); color: var(--color-primary);">Práctica Intensiva</span>
+              </div>
+              <p class="project-desc">
+                Billetera virtual fullstack desarrollada colaborativamente durante 2 meses y medio en las prácticas intensivas junto a Alkemy y la Secretaría de Innovación de Río Negro. Implementación bajo marco ágil Scrum, simulación de entorno laboral real, transacciones seguras y arquitectura orientada a servicios.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag" style="color: var(--color-primary);">Full Stack</span>
+                <span class="tech-tag" style="color: var(--color-secondary);">Scrum Ágil</span>
+                <span class="tech-tag" style="color: var(--color-tertiary);">Alkemy &amp; Río Negro</span>
+                <span class="tech-tag" style="color: var(--color-on-surface-variant);">REST APIs</span>
+              </div>
+            </div>
+            <div>
+              <div class="project-meta-row">
+                <span style="display: flex; align-items: center; gap: 0.25rem;">
+                  <span class="material-symbols-outlined" style="font-size: 15px; color: #34d399;">group</span>
+                  <span>Trabajo en Equipo</span>
+                </span>
+                <span style="display: flex; align-items: center; gap: 0.375rem;">
+                  <span style="height: 0.5rem; width: 0.5rem; border-radius: 9999px; background-color: #34d399;"></span>
+                  <span>Finalizado con Éxito</span>
+                </span>
+              </div>
+              <a href="https://github.com/LucianoColalunga" class="btn btn-secondary btn-full" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined" style="font-size: 16px;">code</span>
+                <span>Repositorio GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Ecommerce Teclab -->
+          <article class="project-card">
+            <div>
+              <div class="project-header">
+                <div class="project-title-group">
+                  <span class="material-symbols-outlined" style="font-size: 22px; color: var(--color-secondary);">shopping_bag</span>
+                  <h3 class="project-title">Ecommerce Fullstack — Teclab (290hs)</h3>
+                </div>
+                <span class="project-badge-pill" style="background-color: rgba(221, 183, 255, 0.2); color: var(--color-secondary);">290 Horas</span>
+              </div>
+              <p class="project-desc">
+                Plataforma integral de comercio electrónico creada durante 290 horas de prácticas laborales profesionales en Teclab. Participación transversal de extremo a extremo: diseño en Figma, arquitectura del sistema, base de datos en PostgreSQL, desarrollo fullstack y testing QA riguroso.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag" style="color: #f472b6;">Figma UI/UX</span>
+                <span class="tech-tag" style="color: #38bdf8;">PostgreSQL</span>
+                <span class="tech-tag" style="color: var(--color-primary);">Full Stack</span>
+                <span class="tech-tag" style="color: var(--color-tertiary);">QA Testing</span>
+              </div>
+            </div>
+            <div>
+              <div class="project-meta-row">
+                <span style="display: flex; align-items: center; gap: 0.25rem;">
+                  <span class="material-symbols-outlined" style="font-size: 15px; color: var(--color-secondary);">history_edu</span>
+                  <span>Práctica Profesionalizante</span>
+                </span>
+                <span style="display: flex; align-items: center; gap: 0.375rem;">
+                  <span style="height: 0.5rem; width: 0.5rem; border-radius: 9999px; background-color: #22d3ee;"></span>
+                  <span>290 Horas Aprobadas</span>
+                </span>
+              </div>
+              <a href="https://github.com/LucianoColalunga" class="btn btn-secondary btn-full" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined" style="font-size: 16px;">code</span>
+                <span>Ver en GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: 2° Puesto Hackathon -->
+          <article class="project-card border-amber">
+            <div>
+              <div class="project-header">
+                <div class="project-title-group">
+                  <span class="material-symbols-outlined" style="font-size: 22px; color: #fbbf24;">emoji_events</span>
+                  <h3 class="project-title">🏆 2° Puesto Hackathon Secretaría de Energía</h3>
+                </div>
+                <span class="project-badge-pill" style="background-color: rgba(251, 191, 36, 0.2); color: #fbbf24; font-weight: bold;">2° Puesto</span>
+              </div>
+              <p class="project-desc">
+                Solución tecnológica premiada en la competencia oficial de la Secretaría de Estado de Energía del Gobierno de Río Negro. Reconocimiento por diseño innovador, viabilidad técnica, arquitectura del producto y aporte a la eficiencia energética provincial.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag" style="color: #fbbf24;">Hackathon Provincial</span>
+                <span class="tech-tag" style="color: var(--color-tertiary);">Energía &amp; Sustentabilidad</span>
+                <span class="tech-tag" style="color: var(--color-primary);">Innovación Tecnológica</span>
+              </div>
+            </div>
+            <div>
+              <div class="project-meta-row">
+                <span style="display: flex; align-items: center; gap: 0.25rem;">
+                  <span class="material-symbols-outlined" style="font-size: 15px; color: #fbbf24;">workspace_premium</span>
+                  <span>Secretaría de Energía RN</span>
+                </span>
+                <span style="color: #fbbf24; font-weight: 600;">Premio Provincial</span>
+              </div>
+              <a href="#contacto" class="btn btn-secondary btn-full">
+                <span class="material-symbols-outlined" style="font-size: 16px;">info</span>
+                <span>Consultar Detalles</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Proyecto Ganador Aceleración Tech -->
+          <article class="project-card border-emerald">
+            <div>
+              <div class="project-header">
+                <div class="project-title-group">
+                  <span class="material-symbols-outlined" style="font-size: 22px; color: #34d399;">military_tech</span>
+                  <h3 class="project-title">🏆 Proyecto Ganador — Aceleración Tech</h3>
+                </div>
+                <span class="project-badge-pill" style="background-color: rgba(52, 211, 153, 0.2); color: #34d399; font-weight: bold;">Ganador</span>
+              </div>
+              <p class="project-desc">
+                Proyecto consagrado como ganador en la presentación final frente a paneles evaluadores, empresas del ecosistema e inversores de aceleración técnica. Destacado por estándares de calidad, arquitectura limpia y solidez técnica integral.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag" style="color: #34d399;">Aceleración Alkemy</span>
+                <span class="tech-tag" style="color: var(--color-primary);">Premio Final</span>
+                <span class="tech-tag" style="color: var(--color-secondary);">Pitch &amp; Demo Técnica</span>
+              </div>
+            </div>
+            <div>
+              <div class="project-meta-row">
+                <span style="display: flex; align-items: center; gap: 0.25rem;">
+                  <span class="material-symbols-outlined" style="font-size: 15px; color: #34d399;">verified</span>
+                  <span>Reconocimiento por Jurado</span>
+                </span>
+                <span style="color: #34d399; font-weight: 600;">1° Selección</span>
+              </div>
+              <a href="https://github.com/LucianoColalunga" class="btn btn-secondary btn-full" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined" style="font-size: 16px;">code</span>
+                <span>Ver Proyectos GitHub</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- GitHub Exploration Banner -->
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="https://github.com/LucianoColalunga" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" style="padding: 0.75rem 1.5rem; font-size: 0.9375rem;">
+            <span>Explorar repositorios de código en GitHub (@LucianoColalunga)</span>
+            <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           6. CERTIFICACIONES Y FORMACIÓN OFICIAL
+           ======================================================================= -->
+      <section id="certificados" class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-tertiary);">verified</span>
+            <span class="code-badge" style="color: var(--color-tertiary);">Validación Académica &amp; Técnica</span>
+          </div>
+          <h2 class="section-title">Certificaciones &amp; Formación Oficial</h2>
+          <p class="section-subtitle">
+            Titulación superior, cursos especializados de QA, seguridad e inteligencia artificial con aval institucional.
+          </p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="background-color: rgba(192, 193, 255, 0.1); color: var(--color-primary);">
+              <span class="material-symbols-outlined" style="font-size: 24px;">school</span>
+            </div>
+            <div>
+              <h3 class="cert-title">Diploma Técnico Superior en Programación</h3>
+              <p class="cert-issuer" style="color: var(--color-primary);">Teclab · Título Superior Oficial</p>
+              <p class="cert-desc">Formación técnica integral en software, bases de datos y algoritmos.</p>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="background-color: rgba(192, 193, 255, 0.1); color: var(--color-primary);">
+              <span class="material-symbols-outlined" style="font-size: 24px;">badge</span>
+            </div>
+            <div>
+              <h3 class="cert-title">Auxiliar en Programación</h3>
+              <p class="cert-issuer" style="color: var(--color-primary);">Teclab · Titulación Intermedia</p>
+              <p class="cert-desc">Fundamentos avanzados de desarrollo de software y lógica computacional.</p>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="background-color: rgba(76, 215, 246, 0.1); color: var(--color-tertiary);">
+              <span class="material-symbols-outlined" style="font-size: 24px;">fact_check</span>
+            </div>
+            <div>
+              <h3 class="cert-title">QA Manual</h3>
+              <p class="cert-issuer" style="color: var(--color-tertiary);">UTN (Universidad Tecnológica Nacional)</p>
+              <p class="cert-desc">Diseño de planes de prueba, casos de test, reportes y métricas de calidad.</p>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="background-color: rgba(76, 215, 246, 0.1); color: var(--color-tertiary);">
+              <span class="material-symbols-outlined" style="font-size: 24px;">automation</span>
+            </div>
+            <div>
+              <h3 class="cert-title">QA Avanzado y Automático</h3>
+              <p class="cert-issuer" style="color: var(--color-tertiary);">UTN (Universidad Tecnológica Nacional)</p>
+              <p class="cert-desc">Automatización de pruebas de software, scripts E2E y metodologías ágiles.</p>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="background-color: rgba(244, 63, 94, 0.1); color: #fb7185;">
+              <span class="material-symbols-outlined" style="font-size: 24px;">security</span>
+            </div>
+            <div>
+              <h3 class="cert-title">Ciberseguridad y Hacking Ético</h3>
+              <p class="cert-issuer" style="color: #fb7185;">BIG SCHOOL</p>
+              <p class="cert-desc">Vulnerabilidades web, pentesting básico y buenas prácticas de securización.</p>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="background-color: rgba(168, 85, 247, 0.1); color: #c084fc;">
+              <span class="material-symbols-outlined" style="font-size: 24px;">smart_toy</span>
+            </div>
+            <div>
+              <h3 class="cert-title">Sistemas de Ciberdefensa con IA</h3>
+              <p class="cert-issuer" style="color: #c084fc;">Congreso CACIC</p>
+              <p class="cert-desc">Modelos inteligentes de defensa proactiva y mitigación de amenazas digitales.</p>
+            </div>
+          </div>
+
+          <!-- Cert 7 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="background-color: rgba(245, 158, 11, 0.1); color: #fbbf24;">
+              <span class="material-symbols-outlined" style="font-size: 24px;">query_stats</span>
+            </div>
+            <div>
+              <h3 class="cert-title">Power BI + IA</h3>
+              <p class="cert-issuer" style="color: #fbbf24;">Data Analytics &amp; Visualización</p>
+              <p class="cert-desc">Paneles de control ejecutivos y análisis inteligente de datos de negocio.</p>
+            </div>
+          </div>
+
+          <!-- Cert 8 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="background-color: rgba(221, 183, 255, 0.1); color: var(--color-secondary);">
+              <span class="material-symbols-outlined" style="font-size: 24px;">work_history</span>
+            </div>
+            <div>
+              <h3 class="cert-title">Práctica Profesionalizante Teclab (290hs)</h3>
+              <p class="cert-issuer" style="color: var(--color-secondary);">Teclab · 290 Horas Aprobadas</p>
+              <p class="cert-desc">Desarrollo de eCommerce completo, arquitectura, Figma y PostgreSQL.</p>
+            </div>
+          </div>
+
+          <!-- Cert 9 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="background-color: rgba(16, 185, 129, 0.1); color: #34d399;">
+              <span class="material-symbols-outlined" style="font-size: 24px;">partner_exchange</span>
+            </div>
+            <div>
+              <h3 class="cert-title">Práctica Alkemy &amp; Prov. de Río Negro</h3>
+              <p class="cert-issuer" style="color: #34d399;">Alkemy &amp; Gob. de Río Negro</p>
+              <p class="cert-desc">Desarrollo de AlkyWallet en equipo bajo metodología Scrum.</p>
+            </div>
+          </div>
+
+          <!-- Cert 10 (Award / Featured) -->
+          <div class="cert-card featured-award">
+            <div class="cert-icon" style="background-color: rgba(251, 191, 36, 0.15); color: #fbbf24;">
+              <span class="material-symbols-outlined" style="font-size: 24px;">emoji_events</span>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; sm:flex-direction: row; justify-content: space-between; gap: 0.5rem;">
+              <div>
+                <h3 class="cert-title" style="color: #fde047; font-size: 1rem;">🏆 2° Puesto Hackathon Secretaría de Energía de Río Negro</h3>
+                <p class="cert-desc" style="margin-top: 0.125rem;">Certamen Provincial Oficial · Reconocimiento al equipo por innovación y optimización técnica de procesos.</p>
+              </div>
+              <span class="code-badge" style="background-color: rgba(251, 191, 36, 0.2); color: #fbbf24; padding: 0.25rem 0.75rem; border-radius: 9999px; font-weight: bold; align-self: flex-start;">
+                Premio Concursado
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           7. CV VALUE PROPOSITION BANNER
+           ======================================================================= -->
+      <section id="cv-banner" class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="cv-banner-container">
+          <div class="cv-banner-glow" aria-hidden="true"></div>
+
+          <div class="cv-banner-flex">
+            <div style="max-width: 42rem; display: flex; flex-direction: column; gap: 1rem;">
+              <div class="status-badge" style="align-self: flex-start; background-color: rgba(128, 131, 255, 0.15);">
+                <span class="material-symbols-outlined" style="font-size: 16px; color: var(--color-primary);">verified</span>
+                <span class="code-badge" style="color: var(--color-primary);">Perfil Profesional Consolidado</span>
+              </div>
+
+              <h2 class="section-title">
+                ¿Buscás sumar compromiso y solidez técnica a tu equipo?
+              </h2>
+
+              <p class="section-subtitle">
+                Cuento con amplia formación académica y práctica en desarrollo fullstack con React y Spring Boot, rigurosidad en aseguramiento de calidad QA (manual y automático) y diseño con Figma para crear productos digitales sólidos y centrados en valor real.
+              </p>
+
+              <!-- Highlights Checklist -->
+              <div class="cv-highlights-grid">
+                <div class="cv-highlight-item">
+                  <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-primary);">check_circle</span>
+                  <span>Técnico Superior en Programación (Teclab)</span>
+                </div>
+                <div class="cv-highlight-item">
+                  <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-primary);">check_circle</span>
+                  <span>Especialista QA Manual &amp; Automation (UTN)</span>
+                </div>
+                <div class="cv-highlight-item">
+                  <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-primary);">check_circle</span>
+                  <span>Experiencia en metodologías ágiles Scrum</span>
+                </div>
+                <div class="cv-highlight-item">
+                  <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-primary);">check_circle</span>
+                  <span>Enfoque en Ciberseguridad &amp; Calidad de Código</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CV Action Box -->
+            <div style="flex-shrink: 0; width: 100%; max-width: 20rem;">
+              <div class="cv-card-box">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <div style="width: 3rem; height: 3rem; border-radius: var(--radius-md); background-color: rgba(192, 193, 255, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary);">
+                    <span class="material-symbols-outlined" style="font-size: 28px;">picture_as_pdf</span>
+                  </div>
+                  <div>
+                    <div style="font-family: var(--font-sans); font-size: 1rem; font-weight: 600; color: var(--color-on-surface);">CV Luciano Colalunga</div>
+                    <div class="code-badge" style="color: var(--color-on-surface-variant); font-size: 0.6875rem;">PDF · Full Stack &amp; QA · Actualizado</div>
+                  </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; padding-top: 0.5rem;">
+                  <a href="#" class="btn btn-primary btn-full">
+                    <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
+                    <span>Descargar CV Completo</span>
+                  </a>
+                  <a href="https://wa.me/5492920344637" class="btn btn-emerald btn-full" target="_blank" rel="noopener noreferrer">
+                    <span class="material-symbols-outlined" style="font-size: 18px;">chat</span>
+                    <span>Chatear por WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           8. CONTACTO DIRECTO Y FORMULARIO SEGURO
+           ======================================================================= -->
+      <section id="contacto" class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-secondary);">forum</span>
+            <span class="code-badge" style="color: var(--color-secondary);">Contacto Directo</span>
+          </div>
+          <h2 class="section-title">Hablemos: Conectemos por el canal que prefieras</h2>
+          <p class="section-subtitle">
+            Disponible para propuestas de trabajo, proyectos de desarrollo Full Stack, testing QA o colaboraciones técnicas.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Channels (WhatsApp, LinkedIn, GitHub, Email) -->
+          <div class="contact-channels-grid">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5492920344637" class="channel-card border-emerald" target="_blank" rel="noopener noreferrer">
+              <div>
+                <div class="channel-header">
+                  <div class="channel-icon-box" style="background-color: rgba(16, 185, 129, 0.1); color: #34d399;">
+                    <span class="material-symbols-outlined" style="font-size: 22px;">chat</span>
+                  </div>
+                  <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-outline-variant);">arrow_outward</span>
+                </div>
+                <h3 class="channel-title">WhatsApp Directo</h3>
+                <p class="channel-desc">Respuesta inmediata para consultas de proyectos o contratación.</p>
+              </div>
+              <div class="channel-footer" style="color: #34d399; font-weight: 600;">+54 9 2920 344637</div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/luciano-colalunga/" class="channel-card" target="_blank" rel="noopener noreferrer">
+              <div>
+                <div class="channel-header">
+                  <div class="channel-icon-box" style="background-color: var(--color-surface-container-high); color: var(--color-on-surface);">
+                    <span class="material-symbols-outlined" style="font-size: 22px;">badge</span>
+                  </div>
+                  <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-outline-variant);">arrow_outward</span>
+                </div>
+                <h3 class="channel-title">LinkedIn Profesional</h3>
+                <p class="channel-desc">Red laboral formal, trayectoria y recomendaciones profesionales.</p>
+              </div>
+              <div class="channel-footer" style="color: var(--color-secondary);">in/luciano-colalunga</div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/LucianoColalunga" class="channel-card" target="_blank" rel="noopener noreferrer">
+              <div>
+                <div class="channel-header">
+                  <div class="channel-icon-box" style="background-color: var(--color-surface-container-high); color: var(--color-on-surface);">
+                    <span class="material-symbols-outlined" style="font-size: 22px;">code</span>
+                  </div>
+                  <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-outline-variant);">arrow_outward</span>
+                </div>
+                <h3 class="channel-title">Perfil de GitHub</h3>
+                <p class="channel-desc">Código abierto, commits regulares y repositorios de práctica.</p>
+              </div>
+              <div class="channel-footer" style="color: var(--color-primary);">@LucianoColalunga</div>
+            </a>
+
+            <!-- Email con Copiado Seguro -->
+            <div class="channel-card">
+              <div>
+                <div class="channel-header">
+                  <div class="channel-icon-box" style="background-color: var(--color-surface-container-high); color: var(--color-on-surface);">
+                    <span class="material-symbols-outlined" style="font-size: 22px;">mail</span>
+                  </div>
+                  <span class="code-badge" style="display: inline-flex; align-items: center; gap: 0.25rem; color: #34d399;">
+                    <span style="height: 0.375rem; width: 0.375rem; border-radius: 9999px; background-color: #34d399;"></span> Activo
+                  </span>
+                </div>
+                <h3 class="channel-title">Correo Electrónico</h3>
+                <p class="channel-desc">Para propuestas formales, descripciones de puestos y entrevistas.</p>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1rem;">
+                <span id="profile-email-text" style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--color-on-surface); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin-right: 0.5rem;">
+                  colalunga.97@gmail.com
+                </span>
+                <button type="button" class="btn btn-secondary btn-sm" data-copy-target="#profile-email-text" aria-label="Copiar correo electrónico al portapapeles">
+                  Copiar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Secure Contact Form -->
+          <div class="form-box">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span class="material-symbols-outlined" style="font-size: 20px; color: var(--color-primary);">edit_note</span>
+              <h3 class="channel-title">Mensaje Rápido</h3>
+            </div>
+            <p class="channel-desc" style="margin-bottom: 1.5rem;">Completá el formulario para entrar en contacto directo con Luciano Colalunga.</p>
+
+            <form id="contact-form" novalidate autocomplete="on">
+              <!-- Honeypot Anti-Bot Field (Invisible to real users, catches automated spam crawlers) -->
+              <div class="visually-hidden" aria-hidden="true">
+                <label for="hp-website-field">Leave this field empty</label>
+                <input type="text" id="hp-website-field" name="website_hp_check" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="form-group">
+                <label for="form-name" class="form-label">Nombre Completo</label>
+                <input 
+                  type="text" 
+                  id="form-name" 
+                  name="nombre" 
+                  class="form-control" 
+                  placeholder="Tu nombre o empresa" 
+                  required 
+                  maxlength="100" 
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Correo Electrónico</label>
+                <input 
+                  type="email" 
+                  id="form-email" 
+                  name="email" 
+                  class="form-control" 
+                  placeholder="tu-correo@empresa.com" 
+                  required 
+                  maxlength="254" 
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Asunto</label>
+                <input 
+                  type="text" 
+                  id="form-subject" 
+                  name="asunto" 
+                  class="form-control" 
+                  placeholder="Propuesta de proyecto / Puesto laboral" 
+                  required 
+                  maxlength="150"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Mensaje</label>
+                <textarea 
+                  id="form-message" 
+                  name="mensaje" 
+                  class="form-control textarea" 
+                  placeholder="Describí brevemente los requerimientos de tu proyecto o propuesta..." 
+                  required 
+                  rows="4" 
+                  maxlength="3000"
+                ></textarea>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary btn-full" style="height: 2.75rem;">
+                <span class="material-symbols-outlined" style="font-size: 18px;">send</span>
+                <span>Enviar Mensaje a Luciano</span>
+              </button>
+
+              <!-- Accessible Alert Success -->
+              <div id="form-success" class="form-alert form-alert-success visually-hidden" role="alert" aria-live="polite">
+                <span class="material-symbols-outlined" style="font-size: 20px;">check_circle</span>
+                <span>¡Mensaje enviado con éxito! Luciano te responderá a la brevedad.</span>
+              </div>
+
+              <!-- Accessible Alert Error -->
+              <div id="form-error" class="form-alert form-alert-error visually-hidden" role="alert" aria-live="assertive">
+                <span class="material-symbols-outlined" style="font-size: 20px;">error</span>
+                <span class="error-text">Ocurrió un error con el formulario.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       9. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-flex">
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: center; md:align-items: flex-start;">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <img 
+            src="https://lh3.googleusercontent.com/aida/AEtjO1UxAWpjcdg-SHEg3e0OYghhu-7Vpr_Cj-GDR_hyTPHHVNY7Ry4N5QXsP8up_gC6vJzZPKwQ3SDCj-Jh3mUuCkFXlbCfwHWEOIGaAtuES8RY60a-NGXCKNFCPwis11OEEcfXpCncz5S2xy6SPAj0SbFk7MlI47XntdzHg9Pd7l0c9Pai-coWAJTpg47S7nBAn6Zuc0q1R9i9uHzRqPL91O5zN4YHVYlcq_iqFepuQLJmiRSQE7EpZdB-" 
+            alt="Luciano Colalunga Logo" 
+            style="height: 1.5rem; width: 1.5rem; border-radius: var(--radius-sm); object-fit: contain;"
+          />
+          <span style="font-family: var(--font-sans); font-size: 1.125rem; font-weight: 600; color: var(--color-on-surface);">Luciano Colalunga</span>
+        </div>
+        <p style="font-size: 0.8125rem; color: var(--color-on-surface-variant); text-align: center; md:text-align: left;">
+          © 2026 Luciano Colalunga. Desarrollado con arquitectura por capas y ciberseguridad web.
+        </p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-social-links">
+        <a href="https://github.com/LucianoColalunga" class="social-btn" target="_blank" rel="noopener noreferrer" title="GitHub (@LucianoColalunga)" aria-label="GitHub">
+          <span class="material-symbols-outlined" style="font-size: 20px;">code</span>
+        </a>
+        <a href="https://www.linkedin.com/in/luciano-colalunga/" class="social-btn" target="_blank" rel="noopener noreferrer" title="LinkedIn (Luciano Colalunga)" aria-label="LinkedIn">
+          <span class="material-symbols-outlined" style="font-size: 20px;">badge</span>
+        </a>
+        <a href="https://wa.me/5492920344637" class="social-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp (+54 9 2920 344637)" aria-label="WhatsApp">
+          <span class="material-symbols-outlined" style="font-size: 20px;">chat</span>
+        </a>
+        <a href="mailto:colalunga.97@gmail.com" class="social-btn" title="Email (colalunga.97@gmail.com)" aria-label="Enviar Correo">
+          <span class="material-symbols-outlined" style="font-size: 20px;">mail</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Orchestrator Script -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
