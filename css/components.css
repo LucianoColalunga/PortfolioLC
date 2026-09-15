@@ -253,12 +253,13 @@
 .hero-wrapper {
   position: relative;
   overflow: hidden;
-  padding-top: 2rem;
+  padding-top: 5.5rem;
   padding-bottom: 4rem;
 }
 
 @media (min-width: 1024px) {
   .hero-wrapper {
+    padding-top: 6.5rem;
     padding-bottom: 6rem;
   }
 }
