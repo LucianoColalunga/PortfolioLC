@@ -919,7 +919,18 @@
             </div>
             <p class="channel-desc" style="margin-bottom: 1.5rem;">Completá el formulario para entrar en contacto directo con Luciano Colalunga.</p>
 
-            <form id="contact-form" novalidate autocomplete="on">
+            <form 
+              id="contact-form" 
+              name="contacto" 
+              method="POST" 
+              data-netlify="true" 
+              netlify-honeypot="website_hp_check" 
+              novalidate 
+              autocomplete="on"
+            >
+              <!-- Required hidden field for Netlify Forms AJAX/Fetch submissions -->
+              <input type="hidden" name="form-name" value="contacto" />
+
               <!-- Honeypot Anti-Bot Field (Invisible to real users, catches automated spam crawlers) -->
               <div class="visually-hidden" aria-hidden="true">
                 <label for="hp-website-field">Leave this field empty</label>

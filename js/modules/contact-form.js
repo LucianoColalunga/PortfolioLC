@@ -91,18 +91,31 @@ export function initContactForm() {
       timestamp: new Date().toISOString()
     };
 
-    // 7. Simular envío seguro / Integrar endpoint
+    // 7. Envío a Netlify Forms (compatible con Netlify Forms & AJAX)
     try {
       if (submitButton) {
         submitButton.disabled = true;
         submitButton.textContent = 'Enviando mensaje...';
       }
 
-      // Si se desea conectar a Formspree / API Backend, se puede hacer fetch aquí:
-      // await fetch('https://formspree.io/f/TU_ID', { method: 'POST', body: JSON.stringify(sanitizedPayload) });
+      const formData = new FormData(form);
+      formData.set('form-name', 'contacto');
+      formData.set('nombre', sanitizedPayload.nombre);
+      formData.set('email', sanitizedPayload.email);
+      formData.set('asunto', sanitizedPayload.asunto);
+      formData.set('mensaje', sanitizedPayload.mensaje);
 
-      // Simulación de respuesta segura de red
-      await new Promise((resolve) => setTimeout(resolve, 800));
+      const urlEncodedBody = new URLSearchParams(formData).toString();
+
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: urlEncodedBody
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error al enviar formulario a Netlify: ${response.status}`);
+      }
 
       rateLimiter.recordSubmission();
       form.reset();
