@@ -15,7 +15,7 @@ export const PROFILE_DATA = {
   githubUrl: 'https://github.com/LucianoColalunga',
   linkedinUrl: 'https://www.linkedin.com/in/luciano-colalunga/',
   avatarUrl: './assets/luciano-perfil.jpg',
-  logoUrl: 'https://lh3.googleusercontent.com/aida/AEtjO1UxAWpjcdg-SHEg3e0OYghhu-7Vpr_Cj-GDR_hyTPHHVNY7Ry4N5QXsP8up_gC6vJzZPKwQ3SDCj-Jh3mUuCkFXlbCfwHWEOIGaAtuES8RY60a-NGXCKNFCPwis11OEEcfXpCncz5S2xy6SPAj0SbFk7MlI47XntdzHg9Pd7l0c9Pai-coWAJTpg47S7nBAn6Zuc0q1R9i9uHzRqPL91O5zN4YHVYlcq_iqFepuQLJmiRSQE7EpZdB-',
+  logoUrl: './assets/logo.png',
   
   metrics: [
     {
