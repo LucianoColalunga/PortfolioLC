@@ -101,6 +101,12 @@ async function askGemini(userMessage) {
     }
   };
 
+  if (GEMINI_API_KEY === 'TU_API_KEY_AQUI') {
+    // Modo demostración si no hay API key configurada
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    return "¡Hola! Por el momento estoy en modo de demostración porque no se configuró una API Key. Luciano es un excelente desarrollador Full Stack y QA, ¡no dudes en contactarlo por LinkedIn o WhatsApp!";
+  }
+
   const response = await fetch(GEMINI_ENDPOINT, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -245,7 +251,9 @@ function renderChips() {
     const btn = document.createElement('button');
     btn.className = 'ai-chip';
     btn.textContent = chip.label;
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
       sendMessage(chip.query, chip.label);
     });
     chipsEl.appendChild(btn);
@@ -326,7 +334,11 @@ export function initAIAssistant() {
 
   // Eventos
   document.getElementById('ai-bubble').addEventListener('click', togglePanel);
-  document.getElementById('ai-close-btn').addEventListener('click', togglePanel);
+  document.getElementById('ai-close-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    togglePanel();
+  });
 
   const input = document.getElementById('ai-input');
   const sendBtn = document.getElementById('ai-send-btn');
