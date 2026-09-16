@@ -11,7 +11,7 @@
 
 // ─── CONFIGURACIÓN ───────────────────────────────────────────────────────────
 
-const GEMINI_API_KEY = 'TU_API_KEY_AQUI'; // <-- Reemplazá con tu API key
+const GEMINI_API_KEY = 'AQ.Ab8RN6LXU-1bsG16Hhf27aPBUUztdtWFlpsFTC-J6Xow2brwvw'; // <-- Reemplazá con tu API key
 
 const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
