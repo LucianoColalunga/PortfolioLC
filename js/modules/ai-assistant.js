@@ -11,9 +11,9 @@
 
 // ─── CONFIGURACIÓN ───────────────────────────────────────────────────────────
 
-const GEMINI_API_KEY = 'AQ.Ab8RN6LXU-1bsG16Hhf27aPBUUztdtWFlpsFTC-J6Xow2brwvw'; // <-- Reemplazá con tu API key
-
-const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+// Ya no exponemos la API Key en el cliente.
+// Usamos un endpoint Serverless (Vercel/Netlify) que la oculta de forma segura.
+const GEMINI_ENDPOINT = '/api/gemini';
 
 const SYSTEM_PROMPT = `Sos el asistente virtual del portfolio de Luciano Colalunga.
 Tu función es ayudar a los visitantes a conocer a Luciano y navegar su portfolio.
@@ -100,12 +100,6 @@ async function askGemini(userMessage) {
       temperature: 0.7,
     }
   };
-
-  if (GEMINI_API_KEY === 'TU_API_KEY_AQUI') {
-    // Modo demostración si no hay API key configurada
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    return "¡Hola! Por el momento estoy en modo de demostración porque no se configuró una API Key. Luciano es un excelente desarrollador Full Stack y QA, ¡no dudes en contactarlo por LinkedIn o WhatsApp!";
-  }
 
   const response = await fetch(GEMINI_ENDPOINT, {
     method: 'POST',
