@@ -178,7 +178,6 @@ function createWidget() {
             </p>
           </div>
         </div>
-        </div>
         <div style="display: flex; gap: 4px; align-items: center;">
           <button id="ai-clear-btn" class="ai-close-btn" aria-label="Reiniciar chat" title="Reiniciar chat">
             <span class="material-symbols-outlined" style="font-size:18px;">delete</span>
