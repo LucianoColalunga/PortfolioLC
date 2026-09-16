@@ -178,9 +178,15 @@ function createWidget() {
             </p>
           </div>
         </div>
-        <button id="ai-close-btn" class="ai-close-btn" aria-label="Cerrar asistente">
-          <span class="material-symbols-outlined" style="font-size:18px;">close</span>
-        </button>
+        </div>
+        <div style="display: flex; gap: 4px; align-items: center;">
+          <button id="ai-clear-btn" class="ai-close-btn" aria-label="Reiniciar chat" title="Reiniciar chat">
+            <span class="material-symbols-outlined" style="font-size:18px;">delete</span>
+          </button>
+          <button id="ai-close-btn" class="ai-close-btn" aria-label="Cerrar asistente" title="Cerrar asistente">
+            <span class="material-symbols-outlined" style="font-size:18px;">close</span>
+          </button>
+        </div>
       </div>
 
       <!-- Mensajes -->
@@ -265,6 +271,19 @@ function hideChips() {
   if (chipsEl) chipsEl.style.display = 'none';
 }
 
+function clearChat() {
+  chatHistory = [];
+  const messagesEl = document.getElementById('ai-messages');
+  messagesEl.innerHTML = '';
+  renderMessage('bot', '¡Hola! 👋 Soy el asistente del portfolio de **Luciano**. Puedo ayudarte a conocer sus proyectos, habilidades, certificaciones y cómo contactarlo. ¿En qué te puedo ayudar?');
+  
+  const chipsEl = document.getElementById('ai-chips');
+  if (chipsEl) {
+    chipsEl.style.display = 'flex'; // O lo que use tu CSS por defecto
+    renderChips();
+  }
+}
+
 // ─── LÓGICA DE CHAT ───────────────────────────────────────────────────────────
 
 async function sendMessage(query, displayText = null) {
@@ -334,6 +353,13 @@ export function initAIAssistant() {
 
   // Eventos
   document.getElementById('ai-bubble').addEventListener('click', togglePanel);
+  
+  document.getElementById('ai-clear-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    clearChat();
+  });
+
   document.getElementById('ai-close-btn').addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
